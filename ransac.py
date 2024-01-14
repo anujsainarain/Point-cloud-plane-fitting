@@ -44,7 +44,9 @@ def fit_plane_ransac(point_cloud, distance_threshold=0.017, max_iterations=5000)
 
     return best_plane_model, best_inliers
 
-# Extracting the demo point cloud by Open3D
+
+
+# Extracting the point cloud by Open3D(demo point clouds)
 pcd_point_cloud = o3d.data.PCDPointCloud()
 pcd = o3d.io.read_point_cloud(pcd_point_cloud.path)
 
